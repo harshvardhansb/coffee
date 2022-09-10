@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Orders </title>
+</head>
+<body>
+
+    <div class="order">
+      
+    <div class="coffee">
+        <label for="coffee">Choose a Coffee</label>
+
+        <select id="coffee">
+          <option value="c1" name="Espresso" >Espresso</option>
+          <option value="c2" name="Cappuccino">Cappuccino</option>
+          <option value="c3" name="Latte">Latte</option>
+         
+        </select>
+    </div>
+
+    <div class="addon">
+        <label for="add-ons">Choose add-ons</label>
+
+        <select id="add-ons">
+          <option value="a1" name="Milk">Milk</option>
+          <option value="a2" name="Cream">Cream</option>
+          <option value="a3" name="Latte">Latte</option>
+         
+        </select>
+    </div>
+
+    <div class="quantity">
+
+        <label for="quantity">Quantity (between 1 and 5):</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="5">
+
+    </div>
+
+
+
+    <button id="add" onclick="addItem()" >Add</button>
+
+
+
+    </div>
+
+   
+    <div class="bill">
+        
+    <h1>Your Bill : </h1>
+    </div>
+
+
+
+    <table border="4" id="show">
+        <thead>
+            <tr>
+                <th>Order</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                
+            </tr>
+        </thead>
+    </table>
+
+
+
+<div >
+    <h1>Total Amount : </h1>
+    <h2 id="total">You havn't ordered anything yet..</h2>
+</div>
+
+<script>
+    showtotal();
+</script>
+
+    <script src="main.js"></script>
+</body>
+</html>
